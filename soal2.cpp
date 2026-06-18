@@ -8,8 +8,17 @@ int main() {
     int n;
     cin >> n;
 
-    string labels;
-    cin >> labels;
+    // Baca N label vertex (bisa dengan atau tanpa spasi)
+    vector<char> labels;
+    string token;
+
+    while ((int)labels.size() < n && cin >> token) {
+        for (char c : token) {
+            if (labels.size() < n) {
+                labels.push_back(c);
+            }
+        }
+    }
 
     vector<vector<int>> matrix(n, vector<int>(n));
     for (int i = 0; i < n; i++) {
