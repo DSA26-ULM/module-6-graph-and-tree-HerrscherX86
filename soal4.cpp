@@ -27,7 +27,7 @@ void dfs(int cr, int cc) {
         }
     }
 
-    visited[cr][cc] = false; // backtrack
+    visited[cr][cc] = false;
 }
 
 int main() {

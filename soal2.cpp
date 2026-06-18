@@ -8,7 +8,6 @@ int main() {
     int n;
     cin >> n;
 
-    // Baca N label vertex (bisa dengan atau tanpa spasi)
     vector<char> labels;
     string token;
 

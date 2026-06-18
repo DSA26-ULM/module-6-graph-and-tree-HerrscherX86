@@ -8,11 +8,9 @@ int main() {
     int n, m;
     cin >> n;
 
-    // Baca N label vertex (bisa dengan atau tanpa spasi)
     vector<char> labels;
     string token;
 
-    // Baca sampai dapat N label
     while ((int)labels.size() < n && cin >> token) {
         for (char c : token) {
             if (labels.size() < n) {

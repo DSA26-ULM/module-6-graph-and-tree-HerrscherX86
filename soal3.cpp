@@ -19,7 +19,6 @@ int main() {
     cin >> sr >> sc;
     cin >> fr >> fc;
 
-    // BFS
     vector<vector<int>> dist(r, vector<int>(c, -1));
     queue<pair<int, int>> q;
 
